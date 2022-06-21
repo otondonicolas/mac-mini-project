@@ -10,6 +10,11 @@
     --accent-color: #0071e3;
     --accent-color-alt: #2997ff;
     --body-bg: #000;
+    --bg-color: #151516;
+    --bg-color-alt: #1d1d1f;
+
+    /*Utils*/
+    --header-height: 3rem;
 }
 
 body {
@@ -22,4 +27,21 @@ body {
 button {
     all: unset;
     cursor: pointer;
+}
+
+a {
+    color: var(--accent-color-alt);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.black-background {
+    background-color: var(--bg-color);
+}
+
+.black-background-alt {
+    background-color: var(--bg-color-alt);
 }
