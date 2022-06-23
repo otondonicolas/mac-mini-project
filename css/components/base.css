@@ -13,8 +13,15 @@
     --bg-color: #151516;
     --bg-color-alt: #1d1d1f;
 
+    /*Stacking context */
+    --z-negative: -1;
+    --z-normal: 1;
+    --z-sticky: 50;
+
+
     /*Utils*/
     --header-height: 3rem;
+    --time: 150ms
 }
 
 body {
