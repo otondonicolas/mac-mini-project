@@ -17,6 +17,7 @@
 .main-header .title {
     color: var(--text-color);
     font-weight: var(--semi-bold-font);
+    font-size: var(--normal-body-size);
     text-decoration: none;
 }
 
@@ -34,13 +35,40 @@
     text-decoration: none;
 }
 
+@media screen and (min-width: 734px) {
+    .main-header {
+        border-bottom: var(--header-border);
+
+    }
+
+    .main-header .right,
+    .main-menu {
+        gap: 1.5rem;
+    }
+
+    .main-menu {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-header .nav {
+        max-width: calc(100% - 3rem);
+    }
+}
+
+
+/*------------------Mobile styles------------------*/
 @media screen and (max-width: 734px) {
     .main-header {
         --transition-menu: 500ms;
     }
 
     .main-header .nav {
-        margin-inline: auto;
         max-width: calc(100% - 2rem);
     }
 
