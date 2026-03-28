@@ -37,5 +37,5 @@ const handleEventListener = (mediaQuery) => {
 
 export const handleActiveMenu = () => {
     if (isTablet.matches) handleAddEventListener()
-    isTablet.addEventListener('change', handleEventListener())
+    isTablet.addEventListener('change', handleEventListener)
 }

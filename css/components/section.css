@@ -1,0 +1,41 @@
+.section {
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.section__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__title {
+    font-family: var(--display-font);
+    font-size: var(--big-title-size);
+    font-weight: var(--bold-font);
+    line-height: var(--title-line-height);
+}
+
+.section__subtitle {
+    font-size: var(--big-body-size);
+    color: #a1a1a6;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.section__cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: var(--big-body-size);
+}
+
+@media screen and (min-width: 734px) {
+    .section {
+        padding: 7rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        padding: 9rem 0;
+    }
+}

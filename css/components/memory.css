@@ -1,0 +1,34 @@
+.memory {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.memory__bg {
+    position: absolute;
+    inset: 0;
+    z-index: var(--z-negative);
+}
+
+.memory__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.memory__content {
+    position: relative;
+    text-align: center;
+}
+
+.memory__icon {
+    width: 64px;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 734px) {
+    .memory__icon {
+        width: 80px;
+    }
+}

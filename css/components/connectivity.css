@@ -1,0 +1,48 @@
+.connectivity__main {
+    margin-bottom: 3rem;
+}
+
+.connectivity__hero-img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+}
+
+.connectivity__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.connectivity__item {
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.connectivity__item img {
+    width: 100%;
+    display: block;
+}
+
+.connectivity__info {
+    padding: 1.5rem;
+}
+
+.connectivity__info h3 {
+    font-family: var(--display-font);
+    font-size: var(--small-title-size);
+    font-weight: var(--semi-bold-font);
+    margin-bottom: 0.5rem;
+}
+
+.connectivity__info p {
+    color: #a1a1a6;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 734px) {
+    .connectivity__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

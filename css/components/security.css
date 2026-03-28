@@ -1,0 +1,46 @@
+.security__padlock {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.padlock-sprite {
+    width: 100px;
+    height: 128px;
+    margin: 0 auto;
+    background: url('../../media/img/padlock-sprite.png') no-repeat 0 0;
+}
+
+.padlock-sprite.is-animating {
+    animation: unlock-animation 2s steps(1) forwards;
+}
+
+.security__features {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.security__feature {
+    text-align: center;
+    max-width: 400px;
+}
+
+.security__feature img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.security__feature h3 {
+    font-family: var(--display-font);
+    font-size: var(--small-title-size);
+    font-weight: var(--semi-bold-font);
+    margin-bottom: 0.75rem;
+}
+
+.security__feature p {
+    color: #a1a1a6;
+    font-size: var(--big-body-size);
+    line-height: 1.5;
+}

@@ -1,0 +1,33 @@
+.apps {
+    position: relative;
+    text-align: center;
+}
+
+.apps__bg {
+    position: absolute;
+    inset: 0;
+    z-index: var(--z-negative);
+}
+
+.apps__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apps__content {
+    position: relative;
+}
+
+.apps__icons {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .apps__icons {
+        max-width: 650px;
+    }
+}

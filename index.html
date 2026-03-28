@@ -5,8 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mac Mini - Apple M1 Chip</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="icons/style.css">
+    <link rel="stylesheet" href="padlock-animation.css">
     <script src="js/index.js" type="module"></script>
 </head>
 <body>
@@ -16,22 +18,342 @@
         <div class="place-center">
             <ul id="main-menu" class="main-menu">
                 <li class="item">
-                    <a href="#" class="link">Description</a>
+                    <a href="#description" class="link">Description</a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">Why Mac?</a>
+                    <a href="#why-mac" class="link">Why Mac?</a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">Specifications</a>
+                    <a href="#specifications" class="link">Specifications</a>
                 </li>
             </ul>
             <button id="menu-button" class="menu-button"></button>
-            <a href="#" class="button tiny">Buy</a>
+            <a href="#buy" class="button tiny">Buy</a>
         </div>
     </nav>
 </header>
-<div class="main-overlay" id="main-overlay">
+<div class="main-overlay" id="main-overlay"></div>
 
-</div>
+<main>
+    <!-- Hero Section -->
+    <section id="description" class="hero">
+        <div class="hero__content container">
+            <h1 class="hero__title">Mac Mini</h1>
+            <img class="hero__chip-logo" src="media/img/m1-logo.png" alt="Apple M1 chip">
+            <p class="hero__tagline">Small chip. Giant leap.</p>
+            <div class="hero__cta">
+                <a href="#buy" class="button">Buy</a>
+                <a href="#chip" class="hero__link">Learn more <span class="icon-right"></span></a>
+            </div>
+        </div>
+        <div class="hero__image">
+            <img src="media/img/hero-image.jpg" alt="Mac Mini">
+        </div>
+    </section>
+
+    <!-- M1 Chip Section -->
+    <section id="chip" class="section black-background">
+        <div class="container">
+            <header class="section__header reveal">
+                <h2 class="section__title">Apple M1 Chip</h2>
+                <p class="section__subtitle">A giant leap for the world's best desktop.</p>
+            </header>
+            <div class="chip__video video-container reveal">
+                <video src="media/video/chip-m1.mp4" muted playsinline preload="none"></video>
+            </div>
+            <div class="chip__image reveal">
+                <img src="media/img/chip-m1.jpg" alt="M1 chip close-up" loading="lazy">
+            </div>
+            <div class="chip__stats">
+                <div class="chip__stat reveal">
+                    <img src="media/img/cpu.png" alt="CPU" loading="lazy">
+                    <h3 class="chip__stat-title">CPU</h3>
+                    <p class="chip__stat-desc">Up to <strong>3x</strong> faster processing</p>
+                </div>
+                <div class="chip__stat reveal reveal-delay-1">
+                    <img src="media/img/gpu.png" alt="GPU" loading="lazy">
+                    <h3 class="chip__stat-title">GPU</h3>
+                    <p class="chip__stat-desc">Up to <strong>6x</strong> faster graphics</p>
+                </div>
+                <div class="chip__stat reveal reveal-delay-2">
+                    <img src="media/img/ssd.png" alt="SSD" loading="lazy">
+                    <h3 class="chip__stat-title">SSD</h3>
+                    <p class="chip__stat-desc">Up to <strong>2x</strong> faster storage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GPU Section -->
+    <section class="section black-background-alt">
+        <div class="container">
+            <header class="section__header reveal">
+                <h2 class="section__title">Up to 6x faster graphics.</h2>
+                <p class="section__subtitle">M1 integrates the fastest integrated graphics in a personal computer into our most affordable desktop.</p>
+            </header>
+            <div class="gpu__video video-container reveal">
+                <video src="media/video/gpu-demostration.mp4" muted playsinline preload="none"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speed Section -->
+    <section class="speed section">
+        <picture class="speed__bg">
+            <source media="(min-width: 1024px)" srcset="media/img/backgrounds/speed-desktop.jpg">
+            <source media="(min-width: 734px)" srcset="media/img/backgrounds/speed-tablet.jpg">
+            <img src="media/img/backgrounds/speed-mobile.jpg" alt="" loading="lazy">
+        </picture>
+        <div class="container speed__content">
+            <h2 class="section__title reveal">Blazing-fast performance.</h2>
+            <p class="section__subtitle reveal">The M1 chip makes Mac mini incredibly fast and powerful. The 8-core CPU delivers up to 3x faster processing performance. And the 8-core GPU brings stunning graphics with up to 6x faster performance.</p>
+        </div>
+    </section>
+
+    <!-- Memory Section -->
+    <section class="memory section">
+        <div class="memory__bg">
+            <img src="media/img/backgrounds/memory.jpg" alt="" loading="lazy">
+        </div>
+        <div class="container memory__content">
+            <div class="reveal">
+                <img src="media/img/memory-icon.png" alt="Memory" class="memory__icon">
+                <h2 class="section__title">8GB unified memory.</h2>
+                <p class="section__subtitle">One pool of fast, unified memory so everything is efficient. The entire system can access data without having to copy it between multiple pools of memory.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- macOS Section -->
+    <section id="why-mac" class="macos section">
+        <picture class="macos__bg">
+            <source media="(min-width: 1024px)" srcset="media/img/backgrounds/macos-bg-desktop.jpg">
+            <source media="(min-width: 734px)" srcset="media/img/backgrounds/macos-bg-tablet.jpg">
+            <img src="media/img/backgrounds/macos-bg-mobile.jpg" alt="" loading="lazy">
+        </picture>
+        <div class="container macos__content">
+            <img src="media/img/macOs-logo.png" alt="macOS" class="macos__logo reveal">
+            <h2 class="section__title reveal">macOS Big Sur</h2>
+            <p class="section__subtitle reveal">Beautifully redesigned. Incredibly capable. Perfectly paired with M1.</p>
+            <img src="media/img/big-sur.png" alt="macOS Big Sur" class="macos__screenshot reveal" loading="lazy">
+            <a href="#" class="macos__link reveal">Learn more about macOS Big Sur <span class="icon-right"></span></a>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section class="apps section">
+        <picture class="apps__bg">
+            <source media="(min-width: 1024px)" srcset="media/img/backgrounds/apps-desktop.jpg">
+            <source media="(min-width: 734px)" srcset="media/img/backgrounds/apps-tablet.jpg">
+            <img src="media/img/backgrounds/apps-mobile.jpg" alt="" loading="lazy">
+        </picture>
+        <div class="container apps__content">
+            <header class="section__header reveal">
+                <h2 class="section__title">All your apps. Lightning fast.</h2>
+                <p class="section__subtitle">Apps fly with the M1 chip and macOS Big Sur. Existing Mac apps run smoothly. And a huge number of your favorite iPhone and iPad apps can now run directly on Mac mini.</p>
+            </header>
+            <div class="reveal">
+                <img src="media/img/apps.png" alt="App icons" class="apps__icons" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="section black-background security">
+        <div class="container">
+            <div class="security__padlock reveal" id="padlock-animation">
+                <div class="padlock-sprite"></div>
+            </div>
+            <header class="section__header reveal">
+                <h2 class="section__title">Security. Built right in.</h2>
+                <p class="section__subtitle">The Apple M1 chip and macOS Big Sur work together to keep you and your data secure. Mac mini comes with the Secure Enclave, hardware-verified secure boot, and run-time protections.</p>
+            </header>
+            <div class="security__features">
+                <div class="security__feature reveal">
+                    <img src="media/img/cube.png" alt="Secure Enclave" loading="lazy">
+                    <h3>Secure Enclave</h3>
+                    <p>Protects your login password, automatically encrypts your data, and powers file-level encryption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connectivity Section -->
+    <section class="section black-background-alt connectivity">
+        <div class="container">
+            <header class="section__header reveal">
+                <h2 class="section__title">All kinds of connected.</h2>
+                <p class="section__subtitle">Versatile connectivity for everything you need.</p>
+            </header>
+            <div class="connectivity__main reveal">
+                <img src="media/img/connectivity.jpg" alt="Mac Mini connectivity ports" class="connectivity__hero-img" loading="lazy">
+            </div>
+            <div class="connectivity__grid">
+                <div class="connectivity__item reveal">
+                    <img src="media/img/backgrounds/thunderbolt.jpg" alt="Thunderbolt ports" loading="lazy">
+                    <div class="connectivity__info">
+                        <h3>Thunderbolt / USB 4</h3>
+                        <p>Two versatile ports for high-speed data transfer, connecting displays, and charging.</p>
+                    </div>
+                </div>
+                <div class="connectivity__item reveal reveal-delay-1">
+                    <img src="media/img/wifi.png" alt="WiFi 6" loading="lazy">
+                    <div class="connectivity__info">
+                        <h3>Wi-Fi 6</h3>
+                        <p>Next-generation Wi-Fi for faster connections.</p>
+                    </div>
+                </div>
+                <div class="connectivity__item reveal reveal-delay-2">
+                    <img src="media/img/backgrounds/mac-router.jpg" alt="Ethernet" loading="lazy">
+                    <div class="connectivity__info">
+                        <h3>Gigabit Ethernet</h3>
+                        <p>Fast, reliable wired networking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section use-cases">
+        <div class="container">
+            <header class="section__header reveal">
+                <h2 class="section__title">Ready for anything.</h2>
+                <p class="section__subtitle">With its incredible performance, Mac mini is ready for whatever you need to do.</p>
+            </header>
+            <div class="use-cases__grid">
+                <div class="use-cases__item reveal">
+                    <img src="media/img/home-office.jpg" alt="Home office" loading="lazy">
+                    <h3>Home Office</h3>
+                </div>
+                <div class="use-cases__item reveal reveal-delay-1">
+                    <img src="media/img/art.jpg" alt="Creative arts" loading="lazy">
+                    <h3>Creative Arts</h3>
+                </div>
+                <div class="use-cases__item reveal reveal-delay-2">
+                    <img src="media/img/music.jpg" alt="Music production" loading="lazy">
+                    <h3>Music</h3>
+                </div>
+                <div class="use-cases__item reveal">
+                    <img src="media/img/game.jpg" alt="Gaming" loading="lazy">
+                    <h3>Gaming</h3>
+                </div>
+                <div class="use-cases__item reveal reveal-delay-1">
+                    <img src="media/img/learning.png" alt="Learning" loading="lazy">
+                    <h3>Learning</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Switch to Mac Section -->
+    <section class="section black-background switch">
+        <div class="container">
+            <header class="section__header reveal">
+                <h2 class="section__title">Switching to Mac is easy.</h2>
+                <p class="section__subtitle">Move all your photos, files, and more in just a few simple steps.</p>
+            </header>
+            <div class="switch__video video-container reveal">
+                <video src="media/video/pc-to-mac.mp4" muted playsinline preload="none"></video>
+            </div>
+            <div class="switch__cta reveal">
+                <a href="#" class="section__cta">Learn how to switch <span class="icon-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise/Education Section -->
+    <section class="section enterprise">
+        <div class="container">
+            <div class="enterprise__grid">
+                <div class="enterprise__item reveal">
+                    <img src="media/img/backgrounds/enterprise.jpg" alt="Mac in Business" loading="lazy">
+                    <div class="enterprise__content">
+                        <h3>Mac in Business</h3>
+                        <p>The power to take your business further.</p>
+                        <a href="#">Learn more <span class="icon-right"></span></a>
+                    </div>
+                </div>
+                <div class="enterprise__item reveal reveal-delay-1">
+                    <img src="media/img/backgrounds/education.jpg" alt="Mac in Education" loading="lazy">
+                    <div class="enterprise__content">
+                        <h3>Mac in Education</h3>
+                        <p>Empowering educators and students.</p>
+                        <a href="#">Learn more <span class="icon-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="section black-background-alt accessories">
+        <div class="container">
+            <header class="section__header reveal">
+                <h2 class="section__title">Accessories</h2>
+                <p class="section__subtitle">Explore keyboards, mice, and other essentials.</p>
+            </header>
+            <div class="accessories__image reveal">
+                <img src="media/img/accessories.jpg" alt="Mac Mini accessories" loading="lazy">
+            </div>
+            <div class="accessories__cta reveal">
+                <a href="#" class="section__cta">Shop Mac accessories <span class="icon-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy CTA Section -->
+    <section id="specifications" class="section buy-cta">
+        <div class="container">
+            <div class="buy-cta__content reveal">
+                <img src="media/img/products.jpg" alt="Mac Mini" class="buy-cta__image" loading="lazy">
+                <h2 class="section__title">Mac Mini</h2>
+                <p class="buy-cta__price">From $699</p>
+                <div class="buy-cta__actions">
+                    <a href="#" class="button" id="buy">Buy</a>
+                    <a href="#" class="buy-cta__link">Learn more <span class="icon-right"></span></a>
+                </div>
+            </div>
+            <div class="buy-cta__ar reveal">
+                <img src="media/img/ar-cellphone.jpg" alt="AR view of Mac Mini" loading="lazy">
+                <p>See Mac Mini in AR</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer black-background-alt">
+    <div class="footer__features">
+        <div class="container">
+            <div class="footer__features-grid">
+                <div class="footer__feature">
+                    <span class="icon-message footer__icon"></span>
+                    <h4>Questions? Chat with a Specialist.</h4>
+                </div>
+                <div class="footer__feature">
+                    <span class="icon-box footer__icon"></span>
+                    <h4>Free delivery on all orders.</h4>
+                </div>
+                <div class="footer__feature">
+                    <span class="icon-coin footer__icon"></span>
+                    <h4>Get 3% Daily Cash back with Apple Card.</h4>
+                </div>
+                <div class="footer__feature">
+                    <span class="icon-users footer__icon"></span>
+                    <h4>Visit an Apple Store and get expert help.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__links">
+        <div class="container">
+            <div class="footer__nav">
+                <p class="footer__legal">More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+                <p class="footer__copyright">&copy; 2021 Apple Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
