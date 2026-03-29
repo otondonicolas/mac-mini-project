@@ -1,0 +1,43 @@
+.macos {
+    position: relative;
+    text-align: center;
+}
+
+.macos__bg {
+    position: absolute;
+    inset: 0;
+    z-index: var(--z-negative);
+}
+
+.macos__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.macos__content {
+    position: relative;
+}
+
+.macos__logo {
+    width: 40px;
+    margin-bottom: 1rem;
+}
+
+.macos__screenshot {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.macos__link {
+    font-size: var(--big-body-size);
+}
+
+@media screen and (min-width: 734px) {
+    .macos__logo {
+        width: 50px;
+    }
+}

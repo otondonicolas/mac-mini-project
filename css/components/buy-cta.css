@@ -1,0 +1,53 @@
+.buy-cta {
+    text-align: center;
+    background-color: var(--body-bg);
+}
+
+.buy-cta__content {
+    margin-bottom: 4rem;
+}
+
+.buy-cta__image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+}
+
+.buy-cta__price {
+    font-family: var(--display-font);
+    font-size: var(--big-body-size);
+    font-weight: var(--semi-bold-font);
+    color: #a1a1a6;
+    margin: 1rem 0 1.5rem;
+}
+
+.buy-cta__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.buy-cta__link {
+    font-size: var(--big-body-size);
+}
+
+.buy-cta__ar {
+    max-width: 400px;
+    margin-inline: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.buy-cta__ar img {
+    width: 100%;
+    display: block;
+}
+
+.buy-cta__ar p {
+    padding: 1rem;
+    color: #a1a1a6;
+}
